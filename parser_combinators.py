@@ -77,7 +77,7 @@ def choice(p1:ParserP, p2:ParserP):
             return p2(i)
     return func
 
-ParserF = t.Callable[[t.Any], t.ParseP]
+ParserF = t.Callable[[t.Any], ParserP]
 # while ParserP is a static function/parser, 
 # parserF is a function that produces a parser. 
 
